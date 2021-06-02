@@ -1,0 +1,60 @@
+
+<!--
+Herencia de la plantilla base.html
+-->
+
+{% extends "AppNaranja/base.html" %}
+{% load static %}
+{% block content %}
+
+        <!-- Heading -->
+        <section class="page-section clearfix">
+            <div class="container">
+                <div class="intro">
+                    <!-- Con código Django, añadimos una imagen. -->
+                    <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'AppNaranja/img/principal.jpg' %}" alt="">
+                    <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                        <h2 class="section-heading mb-4" >
+                            <span class="section-heading-upper">
+                                Profesionalidad
+                            </span>
+                            <span class="section-heading-lower">
+                                Al mejor precio
+                            </span>
+                        </h2>
+                        <p class="mb-3">
+                            El mejor equipo y el mejor servicio, a tu disposición, con la garantía de una gran empresa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Message -->
+        <section class="page-section cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner text-center rounded">
+                            <h2 class="section-heading mb-4">
+
+                                <span class="section-heading-upper">
+                                    Compromiso total
+                                </span>
+                                <span class="section-heading-lower">
+                                    Garantizado
+                                </span>
+
+                            </h2>
+
+                            <p class="mb-0">
+                                Con años de experiencia a nuestras espaldas, tenemos los conocimientos y herramientas necesarios para llevar a cabo nuestro compromiso por el cliente con eficiencia y profesionalidad.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+{% endblock %}

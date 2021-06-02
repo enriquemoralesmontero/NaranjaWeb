@@ -1,0 +1,29 @@
+
+{% extends "AppNaranja/base.html" %}
+{% load static %}
+{% block content %}
+
+    {% for servicio in servicios %}
+
+        <section class="page-section clearfix">
+            <div class="container">
+                <div class="intro">
+                    <!-- Con código Django, añadimos una imagen. -->
+                    <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{servicio.imagen.url}}" style="width: 40%">
+                    <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                        <h2 class="section-heading mb-4" >
+                            <span class="section-heading-upper">
+                                {{servicio.titulo}}
+                            </span>
+                            <span class="section-heading-lower">
+                                {{servicio.contenido}}
+                            </span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    {% endfor %}
+
+{% endblock %}
