@@ -34,13 +34,7 @@
             Categorías:
             {% for post in posts %}
                 {% for categoria in post.categorias.all %}
-                    <!-- Separador -->
-                    |
-                    <!-- Link de filtro de categorias (con estilo CSS propio) -->
-                    <a href="{% url 'categoria' categoria.id %}" class="linksCategorias">
-                        <!-- Nombre de la categoria -->
-                        {{categoria.nombre}}
-                    </a>
+                    | {{categoria.nombre}}
                 {% endfor %}
             {% endfor %}
         </div>

@@ -72,7 +72,7 @@ y al final, lo siguiente:
 
                         <!-- Con un condicional Django le pasamos a la clase CSS el estar activo o no (dependiendo de la página en la que se encuentre). -->
                         <li class="nav-item
-                            {% if request.path == '/servicios' %}
+                            {% if request.path == '/servicios/' %}
                                 active
                             {% endif %}
                         px-lg-4">
@@ -84,7 +84,7 @@ y al final, lo siguiente:
 
                         <!-- Con un condicional Django le pasamos a la clase CSS el estar activo o no (dependiendo de la página en la que se encuentre). -->
                         <li class="nav-item
-                            {% if request.path == '/tienda' %}
+                            {% if request.path == '/tienda/' %}
                                 active
                             {% endif %}
                         px-lg-4">
@@ -95,7 +95,7 @@ y al final, lo siguiente:
 
                         <!-- Con un condicional Django le pasamos a la clase CSS el estar activo o no (dependiendo de la página en la que se encuentre). -->
                         <li class="nav-item
-                            {% if request.path == '/contacto' %}
+                            {% if request.path == '/contacto/' %}
                                 active
                             {% endif %}
                         px-lg-4">
@@ -106,7 +106,7 @@ y al final, lo siguiente:
 
                         <!-- Con un condicional Django le pasamos a la clase CSS el estar activo o no (dependiendo de la página en la que se encuentre). -->
                         <li class="nav-item
-                            {% if request.path == '/blog' %}
+                            {% if request.path|slice:':6' == '/blog/' %}
                                 active
                             {% endif %}
                         px-lg-4">
