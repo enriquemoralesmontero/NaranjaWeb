@@ -5,7 +5,7 @@
 
 <div>
     <div class="container col-md-4 contenedorFormulario" style="margin: 20px auto;">
-        <br>
+        <p>Introduce tus datos:</p>
         <form method="post" action="" style="text-align: center;">
             {% csrf_token %} <!-- Necesario -->
             <table style="margin: 20px auto;">
@@ -13,7 +13,16 @@
             </table>
             <input type="submit" value="Enviar">
         </form>
-        <br>
+        {% if "ok" in request.GET %}
+            <script>
+                window.alert("Información enviada.\nMuchas gracias.");
+            </script>
+            <p style="color:white;">
+                Información enviada. Muchas gracias.
+            </p>
+        {% else %}
+            <br>
+        {% endif %}
     </div>
 </div>
 {% endblock %}
