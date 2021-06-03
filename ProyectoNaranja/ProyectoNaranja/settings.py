@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'AppNaranja',
     'AppServicios',
     'AppBlog',
+    'AppContacto',
 ]
 
 MIDDLEWARE = [

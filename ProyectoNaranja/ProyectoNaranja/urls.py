@@ -25,6 +25,7 @@ urlpatterns = [
     path('', include('AppNaranja.urls')),               # localhost:8000            --> Enlace a la página principal.
     path('servicios/', include('AppServicios.urls')),   # localhost:8000/servicios  --> Enlace a la página de servicios.
     path('blog/', include('AppBlog.urls')),             # localhost:8000/blog       --> Enlace a la página del blog.
+    path('contacto/', include('AppContacto.urls')),     # localhost:8000/contacto   --> Enlace a la página del formul.
 ]
 
 # *El usuario y contraseña del panel de administración es "root", "1234".

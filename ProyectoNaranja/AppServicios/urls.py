@@ -3,8 +3,6 @@ from django.conf import settings            # Para ver las imágenes de la carpe
 from django.conf.urls.static import static  # Para ver las imágenes de la carpeta "/media".
 from AppServicios import views
 
-# Urls de la app llamada "AppNaranja". Será incluida en "urls.py" de "ProyectoNaranja".
-
 urlpatterns = [
     path('', views.servicios, name="Servicios"),
 ]
