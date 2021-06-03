@@ -3,4 +3,17 @@
 {% load static %}
 {% block content %}
 
+<div>
+    <div class="container col-md-4 contenedorFormulario" style="margin: 20px auto;">
+        <br>
+        <form method="post" action="" style="text-align: center;">
+            {% csrf_token %} <!-- Necesario -->
+            <table style="margin: 20px auto;">
+                {{ miformulario.as_table }}
+            </table>
+            <input type="submit" value="Enviar">
+        </form>
+        <br>
+    </div>
+</div>
 {% endblock %}

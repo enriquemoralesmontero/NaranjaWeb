@@ -282,3 +282,7 @@ ul.errorlist{
   color: white;
   text-decoration: underline;
 }
+
+.contenedorFormulario{
+    background-color: rgba(252, 132, 4);
+}
