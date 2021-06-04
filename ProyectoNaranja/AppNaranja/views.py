@@ -5,8 +5,3 @@ from django.shortcuts import render, HttpResponse
 def home(request):
     """ Esta vista busca su plantilla HTML en 'ProyectoNaranja/AppNaranja/templates/AppNaranja/blog.html' """
     return render(request, "AppNaranja/home.html")
-
-def tienda(request):
-    """ Esta vista busca su plantilla HTML en 'ProyectoNaranja/AppNaranja/templates/AppNaranja/tienda.html' """
-    return render(request, "AppNaranja/tienda.html")
-
