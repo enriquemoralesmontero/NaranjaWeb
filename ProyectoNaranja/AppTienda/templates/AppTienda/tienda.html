@@ -5,6 +5,12 @@
 
     <div class="container">                             <!-- Contenedor del GRID -->
 
+        <div style="float: right;">
+            <p style="color: white;">
+                Texto de prueba.
+            </p>
+        </div>
+
         <div class="row">    <!-- FILA -->
 
             {% for producto in productos %}
@@ -15,7 +21,8 @@
                     parece una tarjetita de Material Design -->
                     <div class="card" style="margin: 5px 5px">
                         <div class="card-header">       <!-- Imagen -->
-                            <img class="card-img-top" src="{{producto.imagen.url}}" style="width:200px;">
+                            <!-- img-fluid ajusta la imagen al tamaño del div -->
+                            <img class="card-img-top img-fluid" src="{{producto.imagen.url}}">
                         </div>
                         <div class="card-body" style="text-align:center;">
                             <h5 class="card-title">
@@ -24,6 +31,11 @@
                             <p class="card-text">
                                 {{producto.precio}} €   <!-- Precio -->
                             </p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="a" class="btn btn-success">
+                                Agregar al carro        <!-- Botón "Agregar" -->
+                            </a>
                         </div>
                     </div>
 
