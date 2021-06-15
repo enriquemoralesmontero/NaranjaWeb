@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import redirect
 from AppTienda.models import Producto
 from .carro import Carro
 

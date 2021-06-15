@@ -16,11 +16,12 @@
             {% for key, value in request.session.carro.items %} <!-- Recorremos el diccionario -->
                 <tr class="text-center">
                     <td>{{value.nombre}}</td>
-                    <td>{{value.cantidad}}</td>
                     <td>
                         <a href="{% url 'carro:agregar' value.producto_id %}" class="btn btn-sm btn-primary">+</a>
+                         {{value.cantidad}}
                         <a href="{% url 'carro:restar' value.producto_id %}" class="btn btn-sm btn-primary">-</a>
-                        <br/>
+                    </td>
+                    <td>
                         {{value.precio}} €
                     </td>
                 </tr>
