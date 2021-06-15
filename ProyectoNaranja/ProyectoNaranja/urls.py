@@ -27,6 +27,7 @@ urlpatterns = [
     path('blog/', include('AppBlog.urls')),             # localhost:8000/blog       --> Enlace a la página del blog.
     path('contacto/', include('AppContacto.urls')),     # localhost:8000/contacto   --> Enlace a la página del formul.
     path('tienda/', include('AppTienda.urls')),         # localhost:8000/tienda     --> Enlace a la tienda web.
+    path('carro/', include('AppCarro.urls')),
 ]
 
 # *El usuario y contraseña del panel de administración es "root", "1234".

@@ -6,9 +6,7 @@
     <div class="container">                             <!-- Contenedor del GRID -->
 
         <div style="float: right;">
-            <p style="color: white;">
-                Total: {{importe_total_carro}} €
-            </p>
+            {% include "carro/widget.html" %}
         </div>
 
         <div class="row">    <!-- FILA -->
@@ -33,7 +31,7 @@
                             </p>
                         </div>
                         <div class="card-footer text-center">
-                            <a href="a" class="btn btn-success">
+                            <a href="{% url 'carro:agregar' producto.id %}" class="btn btn-primary">
                                 Agregar al carro        <!-- Botón "Agregar" -->
                             </a>
                         </div>
